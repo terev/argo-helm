@@ -32,4 +32,4 @@ spec:
             - name: CONTROLLER_CONFIG_MAP
               value: {{ .Release.Name }}-{{ .Values.sensorController.name }}-configmap
             - name: SENSOR_IMAGE
-              value: "{{ .Values.registry }}/{{ .Values.sensorController.image }}:{{ .Values.sensorController.tag }}"
+              value: "argoproj/sensor:{{ .Values.sensorController.tag }}"
